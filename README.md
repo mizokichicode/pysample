@@ -64,7 +64,7 @@ sample for python
 ```
 > .venv\Scripts\activate
 (.venv)> cd pysample
-(.venv)> pyinstall --onefile pysample.py    (※)
+(.venv)> pyinstaller --onefile pysample.py    (※)
 (.venv)> deactivate
 >
 ```
