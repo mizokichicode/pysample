@@ -14,6 +14,8 @@ sample for python
 ```
 > source .venv/bin/activate
 (.venv)> python -m pip install -r requirements.txt
+(.venv)> deactivate
+>
 ```
 
 ### build
@@ -22,9 +24,21 @@ sample for python
 > source .venv/bin/activate
 (.venv)> cd pysample
 (.venv)> pyinstaller --onefile pysample.py   (※)
+(.venv)> deactivate
+>
 ```
 
 ※ 2回目以降は `pyinstaller pysample.spec` でも可
+
+
+### test
+
+```
+> source .venv/bin/activate
+(.venv)> python -m unittest discover tests
+(.venv)> deactivate
+>
+```
 
 ---
 
@@ -41,6 +55,8 @@ sample for python
 ```
 > .venv\Scripts\activate
 (.venv)> python -m pip install -r requirements.txt
+(.venv)> deactivate
+>
 ```
 
 ### build
@@ -49,6 +65,17 @@ sample for python
 > .venv\Scripts\activate
 (.venv)> cd pysample
 (.venv)> pyinstall --onefile pysample.py    (※)
+(.venv)> deactivate
+>
 ```
 
 ※ 2回目以降は `pyinstaller pysample.spec` でも可
+
+### test
+
+```
+> .venv\Scripts\activate
+(.venv)> python -m unittest discover tests
+(.venv)> deactivate
+>
+```
